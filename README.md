@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <img src="https://github.com/Fraunhofer-AISEC/codyze-eclipse-plugin/workflows/build/badge.svg">
+  <img src="https://github.com/Fraunhofer-AISEC/codyze-eclipse-plugin/workflows/Maven%20Package/badge.svg">
   <img src="https://img.shields.io/github/last-commit/Fraunhofer-AISEC/codyze-eclipse-plugin.svg?style=popout">
   <a href="https://github.com/Fraunhofer-AISEC/codyze-eclipse-plugin/blob/master/LICENSE"><img alt="undefined" src="https://img.shields.io/github/license/Fraunhofer-AISEC/codyze-eclipse-plugin.svg?style=popout"></a>
 
