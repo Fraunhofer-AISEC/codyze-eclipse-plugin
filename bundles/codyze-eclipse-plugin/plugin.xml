@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            file-extensions="c, cc, cpp, cxx, c++, h, hh, hpp, hxx, h++"
+            id="de.fraunhofer.aisec.codyze.lsp.cpp"
+            name="%content-type.name.cxx"
+            priority="normal">
+      </content-type>
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            file-extensions="java"
+            id="de.fraunhofer.aisec.codyze.lsp.java"
+            name="%content-type.name.java"
+            priority="normal">
+      </content-type>
+   </extension>
+   
+   <extension
+         point="org.eclipse.lsp4e.languageServer">
+      <server
+            class="de.fraunhofer.aisec.codyze.eclipse.server.LspServer"
+            id="de.fraunhofer.aisec.codyze.lsp.server"
+            label="%server.label">
+      </server>
+      <contentTypeMapping
+            contentType="de.fraunhofer.aisec.codyze.lsp.cpp"
+            id="de.fraunhofer.aisec.codyze.lsp.server">
+      </contentTypeMapping>
+      <contentTypeMapping
+            contentType="de.fraunhofer.aisec.codyze.lsp.java"
+            id="de.fraunhofer.aisec.codyze.lsp.server">
+      </contentTypeMapping>      
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page 
+            class="de.fraunhofer.aisec.codyze.eclipse.preferences.CodyzePreferencePage"
+            id="de.fraunhofer.aisec.codyze.eclipse.preferences.CodyzePreferencePage"
+            name="Codyze">
+      </page>
+   </extension>
+   
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="de.fraunhofer.aisec.codyze.eclipse.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   
+   <extension
+         point="org.eclipse.core.filebuffers.documentSetup">
+      <participant
+            class="org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant"
+            contentTypeId="org.eclipse.jdt.core.javaSource">
+      </participant>
+   </extension>
+</plugin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/de.fraunhofer.aisec.codyze.eclipse.feature_1.1.0.jar" id="de.fraunhofer.aisec.codyze.eclipse.feature" version="1.1.0">
+      <category name="de.fraunhofer.aisec.codyze"/>
+   </feature>
+   <category-def name="de.fraunhofer.aisec.codyze" label="Codyze Code Analyzer">
+      <description>
+         Codyze analyzes source code for correct usage of cryptographic libraries. Currently supported languages are Java, C and C++.
+      </description>
+   </category-def>
+</site>

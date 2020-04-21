@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: codyze-eclipse-plugin;singleton:=true
+Bundle-Version: 1.1.0
+Bundle-Activator: de.fraunhofer.aisec.codyze.eclipse.Activator
+Bundle-Vendor: %Bundle-Vendor
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.lsp4e;bundle-version="0.13.0",
+ org.eclipse.ui
+Automatic-Module-Name: codyze-eclipse-plugin
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

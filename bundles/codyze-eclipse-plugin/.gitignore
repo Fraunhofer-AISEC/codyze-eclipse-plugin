@@ -1,0 +1,10 @@
+/bin/
+/target/
+
+.data/
+
+*.log
+*.bin
+*.graphml
+
+
