@@ -7,7 +7,7 @@
 
 	<groupId>de.fraunhofer.aisec.codyze</groupId>
 	<artifactId>codyze-eclipse</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<packaging>pom</packaging>
 
 	<parent>
