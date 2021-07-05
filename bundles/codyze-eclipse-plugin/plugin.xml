@@ -53,10 +53,19 @@
    </extension>
    
    <extension
+         id="javaSource"
          point="org.eclipse.core.filebuffers.documentSetup">
       <participant
             class="org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant"
             contentTypeId="org.eclipse.jdt.core.javaSource">
+      </participant>
+   </extension>
+   <extension
+         id="CSource"
+         point="org.eclipse.core.filebuffers.documentSetup">
+      <participant
+            class="org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant"
+            contentTypeId="org.eclipse.cdt.core.cSource">
       </participant>
    </extension>
 </plugin>
